@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/sansbackground"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/graphic"
+        android:layout_width="311dp"
+        android:layout_height="299dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/asd"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099"
+        app:srcCompat="@drawable/sansg" />
+
+    <TextView
+        android:id="@+id/hepltext"
+        android:layout_width="369dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="65dp"
+        android:background="#FFF"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphic"
+        app:layout_constraintVertical_bias="0.96"
+        tools:text="Hello World" />
+</android.support.constraint.ConstraintLayout>
