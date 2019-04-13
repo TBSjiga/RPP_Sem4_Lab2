@@ -16,7 +16,7 @@
         android:layout_width="59dp"
         android:layout_height="match_parent"
         android:contentDescription="Item avatar"
-        android:src="@drawable/sansg" />
+        android:src="@drawable/sansm" />
 
     <TextView
         android:id="@+id/my_text"

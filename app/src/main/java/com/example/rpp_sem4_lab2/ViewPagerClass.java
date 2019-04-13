@@ -21,23 +21,17 @@ public class ViewPagerClass extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.page_view_fragment);
 
-        // Получение json в виде строки и преобразование к JSONObject
         DataHold dataHold = DataHold.getInstance();
         JSONArray data = dataHold.getData();
 
         this.data = data;
-
         pagerAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager(), this.data);
         pager = findViewById(R.id.view_pager);
         pager.setAdapter(pagerAdapter);
         pager.setCurrentItem((int) getIntent().getSerializableExtra("position"));
-
-
     }
 
-
     private class MyFragmentPagerAdapter extends FragmentPagerAdapter {
-
         private JSONArray data;
 
         public MyFragmentPagerAdapter(FragmentManager fm, JSONArray data) {

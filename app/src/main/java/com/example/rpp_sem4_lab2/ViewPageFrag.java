@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import org.json.JSONArray;
 
 public class ViewPageFrag extends Fragment {
-
     private RecyclerView list;
 
     @Override
@@ -20,13 +19,11 @@ public class ViewPageFrag extends Fragment {
 
         View view =  inflater.inflate(R.layout.main_list, container, false);
 
-        // Получение json в виде строки и преобразование к JSONObject
         DataHold dataHold = DataHold.getInstance();
         JSONArray data = dataHold.getData();
         System.out.println(data.toString());
 
         Context context = getActivity();
-
         list = view.findViewById(R.id.card);
         Adapter adapter = new Adapter(data.length()-1, context);
         list.setAdapter(adapter);

@@ -33,7 +33,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.CardAdapt>{
     public CardAdapt onCreateViewHolder(@NonNull ViewGroup parent, final int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_view, parent, false);
-
         return new CardAdapt(view);
     }
 
@@ -51,7 +50,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.CardAdapt>{
         }
 
         ImageView image = holder.image;
-
         DownloadImageTask imageLoad = new DownloadImageTask(image);
         String base_url = "https://raw.githubusercontent.com/wesleywerner/ancient-tech/02decf875616dd9692b31658d92e64a20d99f816/src/images/tech/";
         try {
