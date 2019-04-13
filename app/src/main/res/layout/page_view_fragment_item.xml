@@ -23,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.099"
-        app:srcCompat="@drawable/sansm" />
+        android:src="@drawable/sansm" />
 
     <TextView
         android:id="@+id/hepltext"
@@ -34,6 +34,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="65dp"
         android:background="#FFF"
+        android:fontFamily="@font/bangers"
         android:text="TextView"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
